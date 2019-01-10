@@ -1,5 +1,5 @@
 class Api::V1::ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :update, :destroy]
+  before_action :set_product, only: [:show, :update, :destroy, :purchase]
 
   # GET /products
   def index
@@ -42,9 +42,8 @@ class Api::V1::ProductsController < ApplicationController
 
   # PUT /products/1/purchase
   def purchase
-    @product = Product.find(params[:product_id])
     if @product.in_stock?
-      @product.inventory_count = @product.inventory_count-1
+      @product.inventory_count -= 1
     end
 
     if @product.inventory_count == 0
