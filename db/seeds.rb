@@ -5,4 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Product.create(title:  'dildo', price: 100, inventory_count: 4)
+Product.create(title:  'dildo', price: 100, inventory_count: 4, in_stock: true)
+Product.create(title:  'yeet', price: 99, inventory_count: 45, in_stock: true)
+Product.create(title:  'yote', price: 45, inventory_count: 54, in_stock: true)
+Product.create(title:  'lol', price: 40, inventory_count: 44, in_stock: true)
+Product.create(title:  'hey', price: 69, inventory_count: 46, in_stock: true)
+Product.create(title:  'sorry', price: 96, inventory_count: 49, in_stock: true)
+Product.create(title:  'oops', price: 96, inventory_count: 0, in_stock: false)

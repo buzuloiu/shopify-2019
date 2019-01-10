@@ -3,7 +3,9 @@ class Api::V1::ProductsController < ApplicationController
 
   # GET /products
   def index
-    @products = Product.all
+    #@products = Product.all
+    @products = Product.in_stock(params[:in_stock])
+
 
     render json: @products
   end
@@ -26,6 +28,10 @@ class Api::V1::ProductsController < ApplicationController
 
   # PATCH/PUT /products/1
   def update
+    product_params[:inventory_count] = product_params[:inventory_count]-1
+    if product_params[:inventory_count] == 0
+      product_params[:in_stock] = false
+    end
     if @product.update(product_params)
       render json: @product
     else
@@ -36,6 +42,9 @@ class Api::V1::ProductsController < ApplicationController
   # DELETE /products/1
   def destroy
     @product.destroy
+  end
+
+  def purchase
   end
 
   private
