@@ -4,7 +4,7 @@ class Api::V1::ProductsController < ApplicationController
   # GET /products
   def index
     #@products = Product.all
-    @products = Product.in_stock(params[:in_stock])
+    @products = Product.in_stock(params[:in_stock]).by_product(params[:id])
 
 
     render json: @products
@@ -28,10 +28,6 @@ class Api::V1::ProductsController < ApplicationController
 
   # PATCH/PUT /products/1
   def update
-    product_params[:inventory_count] = product_params[:inventory_count]-1
-    if product_params[:inventory_count] == 0
-      product_params[:in_stock] = false
-    end
     if @product.update(product_params)
       render json: @product
     else
@@ -44,7 +40,22 @@ class Api::V1::ProductsController < ApplicationController
     @product.destroy
   end
 
+  # PUT /products/1/purchase
   def purchase
+    @product = Product.find(params[:product_id])
+    if @product.in_stock?
+      @product.inventory_count = @product.inventory_count-1
+    end
+
+    if @product.inventory_count == 0
+      @product.in_stock = false
+    end
+
+    if @product.save
+      render json: @product
+    else
+      render json: @product.errors, status: :unprocessable_entity
+    end
   end
 
   private
@@ -55,6 +66,6 @@ class Api::V1::ProductsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def product_params
-      params.require(:product).permit(:title, :price, :inventory_count)
+      params.require(:product).permit(:title, :price, :inventory_count, :in_stock)
     end
 end
