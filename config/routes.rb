@@ -5,7 +5,11 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       put '/products/:id/purchase', to: 'products#purchase'
-      resources :products
+      put '/carts/:id/complete', to: 'carts#complete'
+      resources :products, only: [:index, :show]
+      resources :carts, only: [:create, :show, :index]
+      resources :line_items
     end
   end
+  root to: "api/v1/products#index"
 end

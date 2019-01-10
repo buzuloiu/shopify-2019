@@ -12,3 +12,8 @@ Product.create(title:  'lol', price: 40, inventory_count: 44, in_stock: true)
 Product.create(title:  'hey', price: 69, inventory_count: 46, in_stock: true)
 Product.create(title:  'sorry', price: 96, inventory_count: 49, in_stock: true)
 Product.create(title:  'oops', price: 96, inventory_count: 0, in_stock: false)
+
+Cart.create()
+
+LineItem.create(cart_id: 1, product_id: 2, unit_price: 99, quantity: 1, total_price: 99)
+LineItem.create(cart_id: 1, product_id: 3, unit_price: 45, quantity: 2, total_price: 90)

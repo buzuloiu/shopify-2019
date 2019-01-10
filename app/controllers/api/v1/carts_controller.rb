@@ -1,5 +1,7 @@
+require 'date'
+
 class Api::V1::CartsController < ApplicationController
-  before_action :set_cart, only: [:show, :update, :destroy]
+  before_action :set_cart, only: [:show, :update, :destroy, :complete]
 
   # GET /carts
   def index
@@ -10,7 +12,7 @@ class Api::V1::CartsController < ApplicationController
 
   # GET /carts/1
   def show
-    render json: @cart
+    render json: [@cart, "items" => @cart.line_items]
   end
 
   # POST /carts
@@ -36,6 +38,15 @@ class Api::V1::CartsController < ApplicationController
   # DELETE /carts/1
   def destroy
     @cart.destroy
+  end
+
+  def complete
+    @cart.completed_at = DateTime.now
+    if @cart.save
+      render json: @cart
+    else
+      render json: @cart.errors, status: :unprocessable_entity
+    end
   end
 
   private
