@@ -4,8 +4,6 @@ class CreateLineItems < ActiveRecord::Migration[5.2]
       t.references :product, foreign_key: true
       t.references :cart, foreign_key: true
       t.integer :quantity
-      t.integer :total_price
-      t.integer :unit_price
 
       t.timestamps
     end

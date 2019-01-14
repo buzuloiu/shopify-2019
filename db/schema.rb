@@ -16,7 +16,6 @@ ActiveRecord::Schema.define(version: 2019_01_10_224642) do
   enable_extension "plpgsql"
 
   create_table "carts", force: :cascade do |t|
-    t.integer "total"
     t.datetime "completed_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -28,8 +27,6 @@ ActiveRecord::Schema.define(version: 2019_01_10_224642) do
     t.bigint "product_id"
     t.bigint "cart_id"
     t.integer "quantity"
-    t.integer "total_price"
-    t.integer "unit_price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "unit_price_cents", default: 0, null: false
@@ -42,13 +39,11 @@ ActiveRecord::Schema.define(version: 2019_01_10_224642) do
 
   create_table "products", force: :cascade do |t|
     t.string "title"
-    t.integer "price"
     t.integer "inventory_count"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "price_cents", default: 0, null: false
     t.string "price_currency", default: "USD", null: false
-    t.boolean "in_stock"
   end
 
   add_foreign_key "line_items", "carts"

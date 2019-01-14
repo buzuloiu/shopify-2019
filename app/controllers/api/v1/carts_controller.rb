@@ -1,7 +1,7 @@
 require 'date'
 
 class Api::V1::CartsController < ApplicationController
-  before_action :set_cart, only: [:show, :update, :destroy, :complete]
+  before_action :set_cart, only: [:show, :update, :destroy, :complete, :add_item]
 
   # GET /carts
   def index
