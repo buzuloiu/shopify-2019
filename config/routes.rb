@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       put '/products/:id/purchase', to: 'products#purchase'
       put '/carts/:id/complete', to: 'carts#complete'
-      resources :products, only: [:index, :show]
+      resources :products, only: [:index, :show, :purchase]
       resources :carts, only: [:create, :show, :index]
       resources :line_items
     end

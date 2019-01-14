@@ -4,7 +4,7 @@ class Api::V1::ProductsController < ApplicationController
   # GET /products
   def index
     #@products = Product.all
-    @products = Product.in_stock(params[:in_stock]).by_product(params[:id])
+    @products = Product.qty_available(params[:qty_available]).by_product(params[:id])
 
 
     render json: @products
@@ -42,12 +42,8 @@ class Api::V1::ProductsController < ApplicationController
 
   # PUT /products/1/purchase
   def purchase
-    if @product.in_stock?
+    if @product.inventory_count >= 1
       @product.inventory_count -= 1
-    end
-
-    if @product.inventory_count == 0
-      @product.in_stock = false
     end
 
     if @product.save
