@@ -1,5 +1,5 @@
 class Api::V1::LineItemsController < ApplicationController
-  before_action :set_line_item, only: [:show, :update, :destroy]
+  before_action :set_line_item, only: [:show, :update, :destroy, :purchase]
 
   # GET /line_items
   def index
@@ -37,6 +37,9 @@ class Api::V1::LineItemsController < ApplicationController
   def destroy
     @line_item.destroy
   end
+
+
+  
 
   private
     # Use callbacks to share common setup or constraints between actions.

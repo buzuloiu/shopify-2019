@@ -42,9 +42,7 @@ class Api::V1::ProductsController < ApplicationController
 
   # PUT /products/1/purchase
   def purchase
-    if @product.inventory_count >= 1
-      @product.inventory_count -= 1
-    end
+    @product = Product.find(params[:id]).purchase
 
     if @product.save
       render json: @product

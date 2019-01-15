@@ -40,8 +40,14 @@ class Api::V1::CartsController < ApplicationController
     @cart.destroy
   end
 
+
   def complete
-    @cart.completed_at = DateTime.now
+    if @cart.all_items_available?
+      @line_items = @cart.line_items
+      @line_items.each(&:purchase)
+      @cart.completed_at = DateTime.now
+    end
+
     if @cart.save
       render json: @cart
     else
