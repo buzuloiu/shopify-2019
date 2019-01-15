@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "name": "Products",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Listing products",
+          "link": "products/listing_products.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        }
+      ]
+    }
+  ]
+}

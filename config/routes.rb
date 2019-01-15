@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  apipie
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   namespace :api do
     namespace :v1 do
+      mount Raddocs::App => "/docs"
       put '/products/:id/purchase', to: 'products#purchase'
       put '/carts/:id/complete', to: 'carts#complete'
       put '/carts/:id/add', to: 'carts#add_to_cart'
