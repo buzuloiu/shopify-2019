@@ -35,4 +35,19 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response 204
   end
+
+  test "should purchase product" do
+
+  end
+
+  test "should not purchase out of stock item" do
+
+  end
+
+  test "should only show in stock products" do
+    get products_url, params: {qty_available: 0}, as: :json
+    assert_response :success
+  end
+
+
 end

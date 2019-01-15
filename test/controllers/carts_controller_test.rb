@@ -35,4 +35,20 @@ class CartsControllerTest < ActionDispatch::IntegrationTest
 
     assert_response 204
   end
+
+  test "should not complete completed cart" do
+  end
+
+  test "should complete cart" do
+
+  end
+
+  test "should add to cart" do
+  end
+
+  test "should update existing cart item when adding existing item to cart" do
+
+  end
+
+
 end
