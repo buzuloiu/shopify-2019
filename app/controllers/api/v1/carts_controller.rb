@@ -1,7 +1,7 @@
 require 'date'
 
 class Api::V1::CartsController < ApplicationController
-  before_action :set_cart, only: [:show, :update, :destroy, :complete, :add_item]
+  before_action :set_cart, only: [:show, :update, :destroy, :complete, :add_to_cart]
 
   # GET /carts
   def index
@@ -17,7 +17,7 @@ class Api::V1::CartsController < ApplicationController
 
   # POST /carts
   def create
-    @cart = Cart.new(cart_params)
+    @cart = Cart.new()
 
     if @cart.save
       render json: @cart, status: :created, location: api_v1_product_url(@cart)
@@ -40,16 +40,23 @@ class Api::V1::CartsController < ApplicationController
     @cart.destroy
   end
 
+  # PUT /carts/1/add/:product_id
+  def add_to_cart
+    @product_id = params[:product_id]
+    @quantity = params[:quantity]
+    @cart.add_to_cart(@product_id, @quantity)
+    # redirect to shopping cart or whereever
+    if @cart.save
+      render json: @cart, status: :created, location: api_v1_product_url(@cart)
+    else
+      render json: @cart.errors, status: :unprocessable_entity
+    end
+  end
+
 
   def complete
-    if @cart.all_items_available?
-      @line_items = @cart.line_items
-      @line_items.each(&:purchase)
-      @cart.completed_at = DateTime.now
-    end
-
-    if @cart.save
-      render json: @cart
+    if @cart.complete
+      render json: [@cart, "items" => @cart.line_items]
     else
       render json: @cart.errors, status: :unprocessable_entity
     end
@@ -63,6 +70,6 @@ class Api::V1::CartsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def cart_params
-      params.require(:cart).permit(:total, :completed_at)
+      params.require(cart).permit(:total, :completed_at)
     end
 end
