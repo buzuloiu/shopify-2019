@@ -1,24 +1,14 @@
-# README
+# Shopify Summer 2019 Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Welcome to my repo!
 
-Things you may want to cover:
+## Overview
+This project is a REST API built with Rails 5 and Ruby 2.6.0.
+It uses a Postgres database.  
+It's hosted at: https://shopify-intern-api.herokuapp.com/api
 
-* Ruby version
 
-* System dependencies
+## Docs
+https://shopify-intern-api.herokuapp.com/api/docs
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Demo
