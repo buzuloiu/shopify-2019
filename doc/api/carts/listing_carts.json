@@ -1,15 +1,12 @@
 {
-  "resource": "Products",
+  "resource": "Carts",
   "resource_explanation": null,
   "http_method": "GET",
-  "route": "/api/v1/products",
-  "description": "Listing products",
-  "explanation": "Retrieve all of the products. They can be selected by minimum quantity available.",
+  "route": "/api/v1/carts",
+  "description": "Listing carts",
+  "explanation": "Retrieve all of the carts.",
   "parameters": [
-    {
-      "name": "qty_available",
-      "description": "minimum quantity available, returns products with stock equal to or higher than the parameter"
-    }
+
   ],
   "response_fields": [
 
@@ -17,14 +14,13 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/products?qty_available=1",
+      "request_path": "/api/v1/carts",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
         "Cookie": ""
       },
       "request_query_parameters": {
-        "qty_available": "1"
       },
       "request_content_type": null,
       "response_status": 200,
@@ -34,8 +30,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "9708d663-5b00-4701-bbf2-25860d3f1941",
-        "X-Runtime": "0.002607",
+        "X-Request-Id": "87dba2a0-0b37-4917-bf3c-7a34d0e517f9",
+        "X-Runtime": "0.010565",
         "Content-Length": "2"
       },
       "response_content_type": "application/json; charset=utf-8",

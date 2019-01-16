@@ -1,0 +1,45 @@
+{
+  "resource": "Carts",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/carts/:id/complete",
+  "description": "Completing Carts",
+  "explanation": "Completes a and returns it to you.",
+  "parameters": [
+    {
+      "name": "id",
+      "description": "id of the cart to complete"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/carts/4/complete",
+      "request_body": null,
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"completed_at\": \"2019-01-16T18:25:02.640Z\",\n    \"id\": 4,\n    \"total_cents\": 0,\n    \"created_at\": \"2019-01-16T18:25:02.637Z\",\n    \"updated_at\": \"2019-01-16T18:25:02.641Z\",\n    \"total_currency\": \"USD\"\n  },\n  {\n    \"items\": [\n\n    ]\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"2b9e50215268ad3fa395ecf2db3e2862\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "c1ee4ea2-3cf7-405c-8bdc-47bce3df58e8",
+        "X-Runtime": "0.003730",
+        "Content-Length": "184"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

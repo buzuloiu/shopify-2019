@@ -1,9 +1,21 @@
-# This will guess the User class
+require 'faker'
+
 FactoryBot.define do
   factory :product do
-    title { "one" }
-    price_cents  { 100 }
+    title { Faker::Commerce.product_name }
+    price_cents  { Faker::Number.number(4) }
     price_currency { "USD" }
-    inventory_count { 4 }
+
+    trait :in_stock do
+      inventory_count { Faker::Number.number(2)}
+    end
+
+    trait :out_of_stock do
+      inventory_count { 0 }
+    end
+  end
+
+  factory :cart do
+    
   end
 end

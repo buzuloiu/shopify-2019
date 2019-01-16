@@ -31,6 +31,7 @@ gem 'rspec_api_documentation'
 # gem "apitome"
 gem 'raddocs'
 gem 'factory_bot_rails'
+gem 'faker'
 
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible

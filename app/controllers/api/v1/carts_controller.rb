@@ -20,7 +20,7 @@ class Api::V1::CartsController < ApplicationController
     @cart = Cart.new()
 
     if @cart.save
-      render json: @cart, status: :created, location: api_v1_product_url(@cart)
+      render json: [@cart, "items" => @cart.line_items], status: :created, location: api_v1_product_url(@cart)
     else
       render json: @cart.errors, status: :unprocessable_entity
     end
@@ -44,10 +44,8 @@ class Api::V1::CartsController < ApplicationController
   def add_to_cart
     @product_id = params[:product_id]
     @quantity = params[:quantity]
-    @cart.add_to_cart(@product_id, @quantity)
-    # redirect to shopping cart or whereever
-    if @cart.save
-      render json: @cart, status: :created, location: api_v1_product_url(@cart)
+    if @cart.add_to_cart(@product_id, @quantity)
+      render json: [@cart, "items" => @cart.line_items]
     else
       render json: @cart.errors, status: :unprocessable_entity
     end

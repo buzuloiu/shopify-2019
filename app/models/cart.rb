@@ -25,13 +25,14 @@ class Cart < ApplicationRecord
     end
 
   def complete
-    if !@cart.completed?
-      if @cart.all_items_available?
-        @line_items = @cart.line_items
+    if !self.completed?
+      if self.all_items_available?
+        @line_items = self.line_items
         @line_items.each(&:purchase)
-        @cart.completed_at = DateTime.now
+        self.completed_at = DateTime.now
       end
     end
+    self.save
   end
 
   def completed?

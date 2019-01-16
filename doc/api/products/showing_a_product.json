@@ -17,7 +17,7 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/products/1",
+      "request_path": "/api/v1/products/2",
       "request_body": null,
       "request_headers": {
         "Host": "example.org",
@@ -28,14 +28,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 1,\n  \"title\": \"one\",\n  \"inventory_count\": 4,\n  \"created_at\": \"2019-01-16T03:44:16.952Z\",\n  \"updated_at\": \"2019-01-16T03:44:16.952Z\",\n  \"price_cents\": 100,\n  \"price_currency\": \"USD\"\n}",
+      "response_body": "{\n  \"id\": 2,\n  \"title\": \"Synergistic Marble Watch\",\n  \"inventory_count\": 31,\n  \"created_at\": \"2019-01-16T18:25:02.653Z\",\n  \"updated_at\": \"2019-01-16T18:25:02.653Z\",\n  \"price_cents\": 3384,\n  \"price_currency\": \"USD\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"a14d873c925a00413ded3eda52fefc7a\"",
+        "ETag": "W/\"8341bad9fb153e34bd6515f909088ac3\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "28bf5ce4-70b7-4af0-88f2-cd68cd897c38",
-        "X-Runtime": "0.004178",
-        "Content-Length": "163"
+        "X-Request-Id": "29f14258-955a-4751-a1a2-4a7eefe19aa1",
+        "X-Runtime": "0.001770",
+        "Content-Length": "186"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

@@ -3,8 +3,8 @@
   "resource_explanation": null,
   "http_method": "GET",
   "route": "/api/v1/products",
-  "description": "Listing products",
-  "explanation": "Retrieve all of the products. They can be selected by minimum quantity available.",
+  "description": "Listing products that are in stock",
+  "explanation": "Retrieve all of the products, pass in the qty_available. Only products with inventory_count equal to or higher than the parameter value will be returned.",
   "parameters": [
     {
       "name": "qty_available",
@@ -34,8 +34,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "9708d663-5b00-4701-bbf2-25860d3f1941",
-        "X-Runtime": "0.002607",
+        "X-Request-Id": "f08cb4cb-a3cc-49a1-9d69-a3cb4e0c2ebf",
+        "X-Runtime": "0.002354",
         "Content-Length": "2"
       },
       "response_content_type": "application/json; charset=utf-8",

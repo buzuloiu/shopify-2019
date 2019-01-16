@@ -1,6 +1,47 @@
 {
   "resources": [
     {
+      "name": "Carts",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Adding an item to a cart",
+          "link": "carts/adding_an_item_to_a_cart.json",
+          "groups": "all",
+          "route": "/api/v1/carts/:id/add",
+          "method": "put"
+        },
+        {
+          "description": "Completing Carts",
+          "link": "carts/completing_carts.json",
+          "groups": "all",
+          "route": "/api/v1/carts/:id/complete",
+          "method": "put"
+        },
+        {
+          "description": "Creating Carts",
+          "link": "carts/creating_carts.json",
+          "groups": "all",
+          "route": "/api/v1/carts/",
+          "method": "post"
+        },
+        {
+          "description": "Listing carts",
+          "link": "carts/listing_carts.json",
+          "groups": "all",
+          "route": "/api/v1/carts",
+          "method": "get"
+        },
+        {
+          "description": "Show a specific cart by id",
+          "link": "carts/show_a_specific_cart_by_id.json",
+          "groups": "all",
+          "route": "/api/v1/carts/:id/",
+          "method": "get"
+        }
+      ]
+    },
+    {
       "name": "Products",
       "explanation": null,
       "examples": [
@@ -12,11 +53,25 @@
           "method": "get"
         },
         {
+          "description": "Listing products that are in stock",
+          "link": "products/listing_products_that_are_in_stock.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
           "description": "Showing a product",
           "link": "products/showing_a_product.json",
           "groups": "all",
           "route": "/api/v1/products/:id",
           "method": "get"
+        },
+        {
+          "description": "purchase a product",
+          "link": "products/purchase_a_product.json",
+          "groups": "all",
+          "route": "/api/v1/products/:id/purchase",
+          "method": "put"
         }
       ]
     }
