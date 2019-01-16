@@ -7,7 +7,7 @@ FactoryBot.define do
     price_currency { "USD" }
 
     trait :in_stock do
-      inventory_count { Faker::Number.number(2)}
+      inventory_count { Faker::Number.number(2) }
     end
 
     trait :out_of_stock do
@@ -16,6 +16,6 @@ FactoryBot.define do
   end
 
   factory :cart do
-    
+
   end
 end

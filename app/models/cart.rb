@@ -22,7 +22,8 @@ class Cart < ApplicationRecord
       quantity: quantity,
       total_price_cents: nil,
       unit_price_currency: product.price_currency)
-    end
+    self.save
+  end
 
   def complete
     if !self.completed?

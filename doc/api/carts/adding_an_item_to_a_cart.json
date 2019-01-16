@@ -26,7 +26,7 @@
     {
       "request_method": "PUT",
       "request_path": "/api/v1/carts/3/add",
-      "request_body": "product_id=1&quantity=28",
+      "request_body": "product_id=1&quantity=58",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -37,14 +37,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 3,\n    \"completed_at\": null,\n    \"created_at\": \"2019-01-16T18:25:02.535Z\",\n    \"updated_at\": \"2019-01-16T18:25:02.535Z\",\n    \"total_cents\": 0,\n    \"total_currency\": \"USD\"\n  },\n  {\n    \"items\": [\n      {\n        \"id\": 1,\n        \"product_id\": 1,\n        \"cart_id\": 3,\n        \"quantity\": 28,\n        \"created_at\": \"2019-01-16T18:25:02.632Z\",\n        \"updated_at\": \"2019-01-16T18:25:02.632Z\",\n        \"unit_price_cents\": 8504,\n        \"unit_price_currency\": \"USD\",\n        \"total_price_cents\": 238112,\n        \"total_price_currency\": \"USD\"\n      }\n    ]\n  }\n]",
+      "response_body": "{\n  \"id\": 3,\n  \"total_cents\": 72442,\n  \"total_currency\": \"USD\",\n  \"completed_at\": null,\n  \"line_items\": [\n    {\n      \"product_id\": 1,\n      \"quantity\": 58,\n      \"unit_price_cents\": 1249,\n      \"unit_price_currency\": \"USD\",\n      \"total_price_cents\": 72442,\n      \"total_price_currency\": \"USD\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"2bc124248a836f7a8476feb088c5acfe\"",
+        "ETag": "W/\"a3793728eabcebde66d7e54f6959da8a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "fb482961-400c-4aa0-974a-29f36fb8c528",
-        "X-Runtime": "0.014839",
-        "Content-Length": "399"
+        "X-Request-Id": "b16f41ea-8fbd-486a-bd00-597e88749d11",
+        "X-Runtime": "0.018261",
+        "Content-Length": "224"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

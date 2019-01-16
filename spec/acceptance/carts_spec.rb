@@ -3,6 +3,9 @@ require 'rspec_api_documentation/dsl'
 
 resource "Carts" do
   get "/api/v1/carts" do
+
+    let(:cart) { create :cart }
+
     example "Listing carts" do
       explanation "Retrieve all of the carts."
 

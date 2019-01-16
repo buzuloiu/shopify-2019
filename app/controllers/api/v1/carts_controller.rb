@@ -12,7 +12,7 @@ class Api::V1::CartsController < ApplicationController
 
   # GET /carts/1
   def show
-    render json: [@cart, "items" => @cart.line_items]
+    render json: @cart
   end
 
   # POST /carts
@@ -20,7 +20,7 @@ class Api::V1::CartsController < ApplicationController
     @cart = Cart.new()
 
     if @cart.save
-      render json: [@cart, "items" => @cart.line_items], status: :created, location: api_v1_product_url(@cart)
+      render json: @cart, status: :created, location: api_v1_product_url(@cart)
     else
       render json: @cart.errors, status: :unprocessable_entity
     end
@@ -45,7 +45,7 @@ class Api::V1::CartsController < ApplicationController
     @product_id = params[:product_id]
     @quantity = params[:quantity]
     if @cart.add_to_cart(@product_id, @quantity)
-      render json: [@cart, "items" => @cart.line_items]
+      render json: @cart
     else
       render json: @cart.errors, status: :unprocessable_entity
     end
@@ -54,7 +54,7 @@ class Api::V1::CartsController < ApplicationController
 
   def complete
     if @cart.complete
-      render json: [@cart, "items" => @cart.line_items]
+      render json: @cart
     else
       render json: @cart.errors, status: :unprocessable_entity
     end
