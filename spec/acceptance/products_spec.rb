@@ -18,14 +18,18 @@ resource "Products" do
         expect(status).to eq(200)
       end
     end
+
   get "/api/v1/products/:id" do
+
     # Which GET/POST params can be included in the request and what do they do?
     parameter :id, "id of the product to be shown"
 
-    let(:id) { 2 }
+    let(:id) { 1 }
 
     # We can provide multiple examples for each endpoint, highlighting different aspects of them.
     example "Showing a product" do
+      @product = create(:product)
+
       explanation "Show the product with the given product id"
 
       do_request

@@ -30,7 +30,7 @@ gem 'money-rails', '~>1.12'
 gem 'rspec_api_documentation'
 # gem "apitome"
 gem 'raddocs'
-gem 'factory_bot'
+gem 'factory_bot_rails'
 
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible

@@ -10,6 +10,13 @@
           "groups": "all",
           "route": "/api/v1/products",
           "method": "get"
+        },
+        {
+          "description": "Showing a product",
+          "link": "products/showing_a_product.json",
+          "groups": "all",
+          "route": "/api/v1/products/:id",
+          "method": "get"
         }
       ]
     }
