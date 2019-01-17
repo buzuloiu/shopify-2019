@@ -36,6 +36,7 @@ gem 'active_model_serializers'
 gem 'bcrypt'
 gem 'jwt'
 gem 'simple_command'
+gem 'rack-defense'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'

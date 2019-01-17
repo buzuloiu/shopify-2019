@@ -12,3 +12,12 @@ It's hosted at: https://shopify-intern-api.herokuapp.com/api/v1/
 https://shopify-intern-api.herokuapp.com/api/v1/docs
 
 ## Demo
+
+## Tech
+
+### Securing The APIs
+
+#### JWT
+
+#### Throttling
+- rack-defense
