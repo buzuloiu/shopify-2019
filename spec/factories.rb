@@ -1,6 +1,11 @@
 require 'faker'
 
 FactoryBot.define do
+  factory :user do
+    name { "MyString" }
+    email { "MyString" }
+    password_digest { "MyString" }
+  end
   factory :product do
     title { Faker::Commerce.product_name }
     price_cents  { Faker::Number.number(4) }

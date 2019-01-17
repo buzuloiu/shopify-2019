@@ -33,6 +33,9 @@ gem 'raddocs'
 gem 'factory_bot_rails'
 gem 'faker'
 gem 'active_model_serializers'
+gem 'bcrypt'
+gem 'jwt'
+gem 'simple_command'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
@@ -40,7 +43,7 @@ gem 'active_model_serializers'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails' 
+  gem 'rspec-rails'
   gem 'factory_bot_rails'
   gem 'shoulda-matchers'
   gem 'database_cleaner'
