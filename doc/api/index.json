@@ -1,6 +1,19 @@
 {
   "resources": [
     {
+      "name": "Authentications",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Get an auth token",
+          "link": "authentications/get_an_auth_token.json",
+          "groups": "all",
+          "route": "/authenticate",
+          "method": "post"
+        }
+      ]
+    },
+    {
       "name": "Carts",
       "explanation": null,
       "examples": [

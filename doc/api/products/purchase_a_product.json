@@ -20,6 +20,7 @@
       "request_path": "/api/v1/products/3/purchase",
       "request_body": null,
       "request_headers": {
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE1NDc5MjM4NTB9.uzQQUfO72WNUs8S6xRJnL2m8qqWncAHBwPPzh71TkII",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -29,14 +30,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 3,\n  \"title\": \"Awesome Plastic Computer\",\n  \"inventory_count\": 26,\n  \"price_cents\": 2779,\n  \"price_currency\": \"USD\"\n}",
+      "response_body": "{\n  \"id\": 3,\n  \"title\": \"Aerodynamic Steel Table\",\n  \"inventory_count\": 38,\n  \"price_cents\": 9687,\n  \"price_currency\": \"USD\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"a88cca7fe1e0f510de4fe0c1c5bc4d1d\"",
+        "ETag": "W/\"6575f82173ce26adb210fa008a3e3b89\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "2a9a53ad-bc1d-4a3f-883b-37dea2828f51",
-        "X-Runtime": "0.008631",
-        "Content-Length": "106"
+        "X-Request-Id": "bcfab6cb-518d-4bc7-b233-fab26a4539d1",
+        "X-Runtime": "0.004503",
+        "Content-Length": "105"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

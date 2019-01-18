@@ -7,6 +7,11 @@ resource "Products" do
       # Which GET/POST params can be included in the request and what do they do?
       parameter :qty_available, "minimum quantity available, returns products with stock equal to or higher than the parameter"
 
+      authentication :basic, :api_key, description: 'auth token for api access', name: 'HEADER_KEY'
+
+      let(:user) { create :user }
+      let(:api_key) { JsonWebToken.encode(user_id: user.id) }
+
       let(:one) { create :product }
       let(:two) { create :product }
       let(:three) { create :product }
@@ -34,6 +39,11 @@ resource "Products" do
 
   get "/api/v1/products/:id/" do
 
+    authentication :basic, :api_key, description: 'auth token for api access', name: 'HEADER_KEY'
+
+    let(:user) { create :user }
+    let(:api_key) { JsonWebToken.encode(user_id: user.id) }
+
     parameter :id, "id of the product to be shown"
 
     let(:product) { create :product, :in_stock}
@@ -50,6 +60,11 @@ resource "Products" do
   end
 
   put "/api/v1/products/:id/purchase" do
+
+    authentication :basic, :api_key, description: 'auth token for api access', name: 'HEADER_KEY'
+
+    let(:user) { create :user }
+    let(:api_key) { JsonWebToken.encode(user_id: user.id) }
 
     parameter :id, "id of the product to purchase"
 

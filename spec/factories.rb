@@ -3,8 +3,8 @@ require 'faker'
 FactoryBot.define do
   factory :user do
     name { "MyString" }
-    email { "MyString" }
-    password_digest { "MyString" }
+    email { Faker::Internet.email }
+    password_digest { User.digest('password') }
   end
   factory :product do
     title { Faker::Commerce.product_name }

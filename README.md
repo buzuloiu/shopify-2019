@@ -33,7 +33,7 @@ This is because you need to log in and get a token with which to make requests.
 ### Creating an account
 
 ### Making authorized requests
-To make an authorized requests you can use your token.
+To make an authorized requests you have add your auth token as `Authorization` in the header of your request.
 To get your token, you can `POST` to the `/authenticate` endpoint with like this:
 ```shell
 curl -H "Content-Type: application/json" -X POST -d '{"email":"<your_email>","password":"<your_passsword>}' http://shopify-intern-api.herokuapp.com/authenticate
@@ -41,14 +41,14 @@ curl -H "Content-Type: application/json" -X POST -d '{"email":"<your_email>","pa
 
 the api will respond with:
 ```shell
-{"auth_token":"your_token_here"}
+{"auth_token":"<your_token_here>"}
 ```
-To use the token with curl, make a request like this:
+To use the token with curl, make a request with your auth token as `Authorization` in the header of your request like this:
 
 ```shell
 curl -H "Authorization: <your_token_here>" http://shopify-intern-api.herokuapp.com/api/v1/products
 ```
-and the API should respond to your request by showing you all the products in the store
+and the API should respond to your request by showing you all the products in the store.
 ## Docs
 https://shopify-intern-api.herokuapp.com/api/v1/docs
 

@@ -4,7 +4,11 @@ require 'rspec_api_documentation/dsl'
 resource "Carts" do
   get "/api/v1/carts" do
 
+    authentication :basic, :api_key, description: 'auth token for api access', name: 'HEADER_KEY'
+
     let(:cart) { create :cart }
+    let(:user) { create :user }
+    let(:api_key) { JsonWebToken.encode(user_id: user.id) }
 
     example "Listing carts" do
       explanation "Retrieve all of the carts."
@@ -18,10 +22,15 @@ resource "Carts" do
 
   get "/api/v1/carts/:id/" do
 
+    authentication :basic, :api_key, description: 'auth token for api access', name: 'HEADER_KEY'
+
     parameter :id, "id of the cart to show"
 
     let(:cart) { create :cart }
     let(:id) { cart.id }
+    let(:user) { create :user }
+    let(:api_key) { JsonWebToken.encode(user_id: user.id) }
+
 
     example "Show a specific cart by id" do
       explanation "Retrieve a cart by the id param passed."
@@ -34,6 +43,12 @@ resource "Carts" do
 
 
   post "/api/v1/carts/" do
+
+    authentication :basic, :api_key, description: 'auth token for api access', name: 'HEADER_KEY'
+
+    let(:user) { create :user }
+    let(:api_key) { JsonWebToken.encode(user_id: user.id) }
+
     example "Creating Carts" do
       explanation "Creates a new cart and returns it to you."
 
@@ -44,6 +59,8 @@ resource "Carts" do
   end
 
   put "/api/v1/carts/:id/add" do
+    
+    authentication :basic, :api_key, description: 'auth token for api access', name: 'HEADER_KEY'
 
     parameter :id, "id of the cart to add the product to"
     parameter :product_id, "id of the product to be added"
@@ -55,7 +72,8 @@ resource "Carts" do
     let(:id) { cart.id }
     let(:product_id) { product.id }
     let(:quantity) { product.inventory_count }
-
+    let(:user) { create :user }
+    let(:api_key) { JsonWebToken.encode(user_id: user.id) }
 
     example "Adding an item to a cart" do
       explanation "Adds an item ."
@@ -68,6 +86,10 @@ resource "Carts" do
 
 
   put "/api/v1/carts/:id/complete" do
+    authentication :basic, :api_key, description: 'auth token for api access', name: 'HEADER_KEY'
+
+    let(:user) { create :user }
+    let(:api_key) { JsonWebToken.encode(user_id: user.id) }
 
     let(:cart) { create :cart }
     let(:id) { cart.id }

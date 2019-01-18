@@ -1,0 +1,49 @@
+{
+  "resource": "Authentications",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/authenticate",
+  "description": "Get an auth token",
+  "explanation": "retrieve an auth token",
+  "parameters": [
+    {
+      "name": "email",
+      "description": "email of the user to get the token for"
+    },
+    {
+      "name": "password",
+      "description": "password of the user to get the token for"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/authenticate",
+      "request_body": "email=delbertbarrows%40schoen.net&password=password",
+      "request_headers": {
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"auth_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NDc5MjM4NTB9.o03rHoQTF6x9OQPDHSIYABXQ4DoqToEVJWjV52ZW1yI\"\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"d0b2f110bddb78dfd5a35e13f3876427\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "2f7b4ee4-1dc7-46a8-bf14-dacb5dc66eb8",
+        "X-Runtime": "0.016130",
+        "Content-Length": "122"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

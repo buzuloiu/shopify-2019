@@ -20,6 +20,7 @@
       "request_path": "/api/v1/carts/1/",
       "request_body": null,
       "request_headers": {
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE1NDc5MjM4NTB9.P7nXDw77ryTQPR_lQmCKn_fo-ktnKFE7z1WR7yAxYFw",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -33,8 +34,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"2927fe4522a003891919be40e17a8c8e\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "dcaa7f2c-b7dd-41a0-b004-5594af141902",
-        "X-Runtime": "0.014667",
+        "X-Request-Id": "4e958f11-1c1a-447f-8f36-a3f5f6dfcd20",
+        "X-Runtime": "0.013985",
         "Content-Length": "83"
       },
       "response_content_type": "application/json; charset=utf-8",

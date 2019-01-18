@@ -20,6 +20,7 @@
       "request_path": "/api/v1/products?qty_available=1",
       "request_body": null,
       "request_headers": {
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE1NDc5MjM4NTB9.SQsBZqS5Q9pTPifS3Xw8QxZNhADjiNTJbSd5mYpQpY8",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -34,8 +35,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "102f1f00-c30b-4d28-bd67-76fb8a8cb670",
-        "X-Runtime": "0.003217",
+        "X-Request-Id": "1d9af86d-e6dd-44ae-bb27-a6feba4e743e",
+        "X-Runtime": "0.003836",
         "Content-Length": "2"
       },
       "response_content_type": "application/json; charset=utf-8",
