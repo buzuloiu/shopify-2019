@@ -37,6 +37,7 @@ gem 'bcrypt'
 gem 'jwt'
 gem 'simple_command'
 gem 'rack-defense'
+gem 'figaro'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
@@ -48,6 +49,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'shoulda-matchers'
   gem 'database_cleaner'
+  gem 'figaro'
 end
 
 group :development do
