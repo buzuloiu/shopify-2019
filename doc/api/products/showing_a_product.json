@@ -20,7 +20,7 @@
       "request_path": "/api/v1/products/2/",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4LCJleHAiOjE1NDc5MjM4NTB9.u1KuX3OA70SriKSgDPpPVVMPQpYyXSS0BbdZjvzg0B8",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4LCJleHAiOjE1NDgxMDIxMTF9.kmoUZo9aUjAG00XaywqBhk48uaBuarLcogHsoRx_Bzk",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -29,14 +29,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 2,\n  \"title\": \"Synergistic Leather Chair\",\n  \"inventory_count\": 67,\n  \"price_cents\": 8413,\n  \"price_currency\": \"USD\"\n}",
+      "response_body": "{\n  \"id\": 2,\n  \"title\": \"Mediocre Paper Watch\",\n  \"inventory_count\": 52,\n  \"price_cents\": 3664,\n  \"price_currency\": \"USD\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"3405b2c5ebdbd69de5863524c806e0f9\"",
+        "ETag": "W/\"1649b63ef8760efabcd90dc8f01bd2f6\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "aa598786-15b4-4d85-b9ff-307dec389fce",
-        "X-Runtime": "0.004239",
-        "Content-Length": "107"
+        "X-Request-Id": "fa77476c-f323-41be-a4bf-bd4e1c8f95c1",
+        "X-Runtime": "0.003529",
+        "Content-Length": "102"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

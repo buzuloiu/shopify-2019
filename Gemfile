@@ -50,6 +50,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'database_cleaner'
   gem 'figaro'
+  gem 'pry'
 end
 
 group :development do

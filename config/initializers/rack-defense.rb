@@ -1,5 +1,5 @@
 Rack::Defense.setup do |config|
-  config.throttle('api', 100, 1000) do |req|
+  config.throttle('api', 1, 1000) do |req|
     req.env['HTTP_AUTHORIZATION'] if %r{^/api/} =~ req.path
   end
 

@@ -80,6 +80,19 @@
           "method": "put"
         }
       ]
+    },
+    {
+      "name": "Users",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Creating a new user",
+          "link": "users/creating_a_new_user.json",
+          "groups": "all",
+          "route": "/users",
+          "method": "post"
+        }
+      ]
     }
   ]
 }

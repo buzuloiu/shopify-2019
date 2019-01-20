@@ -22,7 +22,7 @@
     {
       "request_method": "POST",
       "request_path": "/authenticate",
-      "request_body": "email=delbertbarrows%40schoen.net&password=password",
+      "request_body": "email=kirby%40dibbert.info&password=password",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -33,13 +33,13 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"auth_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NDc5MjM4NTB9.o03rHoQTF6x9OQPDHSIYABXQ4DoqToEVJWjV52ZW1yI\"\n}",
+      "response_body": "{\n  \"auth_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NDgxMDIxMTF9.f-deXJyBQyBLqiI2Su82fEeODsrYIP1629Gcf6kyHlM\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"d0b2f110bddb78dfd5a35e13f3876427\"",
+        "ETag": "W/\"95794bbc6a175bf7897d2dec1606e102\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "2f7b4ee4-1dc7-46a8-bf14-dacb5dc66eb8",
-        "X-Runtime": "0.016130",
+        "X-Request-Id": "131cf538-f62c-4903-a069-b3d3bf271b01",
+        "X-Runtime": "0.016271",
         "Content-Length": "122"
       },
       "response_content_type": "application/json; charset=utf-8",

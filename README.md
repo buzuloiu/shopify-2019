@@ -23,7 +23,7 @@ The API uses HTTP requests. You can use a CLI tool like curl,
 
 you should get a response like this:
 
-```
+```json
 {"error":"Not Authorized"}
 ```
 
@@ -31,6 +31,20 @@ This is because you need to log in and get a token with which to make requests.
 
 
 ### Creating an account
+
+To create a user with curl, `POST` to the `/users` endpoint like this:
+
+```shell
+curl -H "Content-Type: application/json" -X POST -d '{"user":{"name":"<your_name>", email":"<your_email>","password":"<your_passsword>}}' http://shopify-intern-api.herokuapp.com/users
+```
+
+and the API should repond with:
+
+```json
+{"name": "<your_name>", "email": "your_email"}
+```
+
+and now you're ready to start making authorized requests!
 
 ### Making authorized requests
 To make an authorized requests you have add your auth token as `Authorization` in the header of your request.
@@ -40,7 +54,7 @@ curl -H "Content-Type: application/json" -X POST -d '{"email":"<your_email>","pa
 ```
 
 the api will respond with:
-```shell
+```json
 {"auth_token":"<your_token_here>"}
 ```
 To use the token with curl, make a request with your auth token as `Authorization` in the header of your request like this:
@@ -68,3 +82,5 @@ https://shopify-intern-api.herokuapp.com/api/v1/docs
 
 #### Throttling
 - rack-defense
+
+## Next Steps

@@ -26,9 +26,9 @@
     {
       "request_method": "PUT",
       "request_path": "/api/v1/carts/3/add",
-      "request_body": "product_id=1&quantity=58",
+      "request_body": "product_id=1&quantity=89",
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NDc5MjM4NTB9.xp_XLLsZbv7DFdiX2QrS1aoNQyOzrNeqplfBzMZz1OE",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NDgxMDIxMTF9.KDPfpBbfsLhWC5VPF5Ow2FoYFQmyqcgbgy6Ib8AVfd0",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -38,13 +38,13 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 3,\n  \"total_cents\": 311634,\n  \"total_currency\": \"USD\",\n  \"completed_at\": null,\n  \"line_items\": [\n    {\n      \"product_id\": 1,\n      \"quantity\": 58,\n      \"unit_price_cents\": 5373,\n      \"unit_price_currency\": \"USD\",\n      \"total_price_cents\": 311634,\n      \"total_price_currency\": \"USD\"\n    }\n  ]\n}",
+      "response_body": "{\n  \"id\": 3,\n  \"total_cents\": 592918,\n  \"total_currency\": \"USD\",\n  \"completed_at\": null,\n  \"line_items\": [\n    {\n      \"product_id\": 1,\n      \"quantity\": 89,\n      \"unit_price_cents\": 6662,\n      \"unit_price_currency\": \"USD\",\n      \"total_price_cents\": 592918,\n      \"total_price_currency\": \"USD\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"036d2ea28349f6e7fb0aade11b12b264\"",
+        "ETag": "W/\"f622825022da1be3136cd273c263f007\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "e5de1909-cbf6-4ef4-ab73-e2ad71f9afa5",
-        "X-Runtime": "0.020862",
+        "X-Request-Id": "2946317b-2945-4c65-b2f0-dc22ca9eb1ba",
+        "X-Runtime": "0.021336",
         "Content-Length": "226"
       },
       "response_content_type": "application/json; charset=utf-8",

@@ -1,12 +1,15 @@
 {
-  "resource": "Carts",
+  "resource": "Users",
   "resource_explanation": null,
   "http_method": "POST",
-  "route": "/api/v1/carts/",
-  "description": "Creating Carts",
-  "explanation": "Creates a new cart and returns it to you.",
+  "route": "/users",
+  "description": "Creating a new user",
+  "explanation": "Create a new user",
   "parameters": [
-
+    {
+      "name": "user",
+      "description": "user hash containing name, email, and password"
+    }
   ],
   "response_fields": [
 
@@ -14,10 +17,9 @@
   "requests": [
     {
       "request_method": "POST",
-      "request_path": "/api/v1/carts/",
-      "request_body": null,
+      "request_path": "/users",
+      "request_body": "user[name]=Neil+Bayer&user[email]=voncile%40kundevon.org&user[password]=Df2mNs6d1cGvOjUv",
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE1NDgxMDIxMTF9.uQfaKJWzPBccyQwamT-cj9kNj1hmTnMYIiocaWog4oE",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -27,15 +29,15 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 2,\n  \"total_cents\": 0,\n  \"total_currency\": \"USD\",\n  \"completed_at\": null,\n  \"line_items\": [\n\n  ]\n}",
+      "response_body": "{\n  \"name\": \"Neil Bayer\",\n  \"email\": \"voncile@kundevon.org\"\n}",
       "response_headers": {
-        "Location": "http://example.org/api/v1/products/2",
+        "Location": "http://example.org/api/v1/products/10",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"757acef7622db53cb07e6f703c15183b\"",
+        "ETag": "W/\"11330277931123b743cd140e7773e8c7\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "ddfc24b1-5274-4962-aeb5-747d7f3a874d",
-        "X-Runtime": "0.003897",
-        "Content-Length": "83"
+        "X-Request-Id": "71d40114-d674-482f-8bd8-30890e86b85d",
+        "X-Runtime": "0.006171",
+        "Content-Length": "52"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null
