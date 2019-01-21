@@ -20,7 +20,7 @@
       "request_path": "/api/v1/products/8/purchase",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNTQ4MTM2NjU2fQ.pLmQ0cxBwMxejYtQEhcbNUN97xKkQUghAef5zLFA9-c",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNTQ4MTQzMzA3fQ.Ft6339_neRWAhmfk8bAD0PUBDlbp6Eoo3dCU53xnmWU",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -34,8 +34,8 @@
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "9b7e5407-4267-4d6c-a2e5-8bf80f4a7003",
-        "X-Runtime": "0.003695",
+        "X-Request-Id": "9d255e42-42e7-4ae2-b19f-35aa4c598ea3",
+        "X-Runtime": "0.004807",
         "Content-Length": "47"
       },
       "response_content_type": "application/json; charset=utf-8",

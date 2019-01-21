@@ -28,7 +28,7 @@
       "request_path": "/api/v1/carts/8/add",
       "request_body": "product_id=99999&quantity=45",
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE1NDgxMzY2NTV9.QWAB7idZU4Bn0dcWX_pyb82CFtTscodYWA_Q_9Zqayk",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE1NDgxNDMzMDd9.8vDqK-wwurKhIbXco2Pn7ywFow3VDH-jA3ZpHhxns6I",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -42,8 +42,8 @@
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
         "Cache-Control": "no-cache",
-        "X-Request-Id": "c13c9cde-b522-40b9-95c0-3fc09dfc9b79",
-        "X-Runtime": "0.006063",
+        "X-Request-Id": "28bb7ec9-889a-4191-84e6-8336529b9f3f",
+        "X-Runtime": "0.006210",
         "Content-Length": "48"
       },
       "response_content_type": "application/json; charset=utf-8",

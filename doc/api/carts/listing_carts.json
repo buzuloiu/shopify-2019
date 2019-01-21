@@ -17,7 +17,7 @@
       "request_path": "/api/v1/carts",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE1NDgxMzY2NTV9.5e40ODQpnIPCPv-YWV6LDCtFyH38bATlQ3w1jW1dRL0",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE1NDgxNDMzMDd9.sUZSi3Y8p98F-cU3zTAfBh41HLzjCXhpaQerIPchKR0",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -31,8 +31,8 @@
         "Content-Type": "application/json; charset=utf-8",
         "ETag": "W/\"f8825b0f2bf787c341435a15a81b8a88\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "9c6ddf83-f2ab-496b-b8b8-9bc453e084c1",
-        "X-Runtime": "0.022960",
+        "X-Request-Id": "7210f342-011f-4769-a388-513088a4d34c",
+        "X-Runtime": "0.030044",
         "Content-Length": "337"
       },
       "response_content_type": "application/json; charset=utf-8",

@@ -20,7 +20,7 @@
       "request_path": "/api/v1/products",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE1NDgxMzY2NTV9._PoBBCdvQ3W0g5-8QxxtbHFjNbRtMUl9ZDEsW7Nzvw4",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE1NDgxNDMzMDd9.OlptoagAOn9lZ0JB2zDLjMSRegzxrp5EohheQu_srxM",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -29,14 +29,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 4,\n    \"title\": \"Mediocre Leather Coat\",\n    \"inventory_count\": 68,\n    \"price_cents\": 1599,\n    \"price_currency\": \"USD\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"Aerodynamic Iron Chair\",\n    \"inventory_count\": 0,\n    \"price_cents\": 5086,\n    \"price_currency\": \"USD\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 4,\n    \"title\": \"Rustic Bronze Watch\",\n    \"inventory_count\": 89,\n    \"price_cents\": 7164,\n    \"price_currency\": \"USD\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"Ergonomic Aluminum Coat\",\n    \"inventory_count\": 0,\n    \"price_cents\": 3398,\n    \"price_currency\": \"USD\"\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"325cf7694b0612f9697819de5c89f2cb\"",
+        "ETag": "W/\"cc76f082a1a17538582fe0ad324500a5\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "dc568ac7-9775-427d-a146-8859849e94a9",
-        "X-Runtime": "0.002289",
-        "Content-Length": "209"
+        "X-Request-Id": "6f785ab2-18ad-45da-94d3-6b81b9d0b19d",
+        "X-Runtime": "0.002709",
+        "Content-Length": "208"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

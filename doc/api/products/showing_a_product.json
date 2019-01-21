@@ -20,7 +20,7 @@
       "request_path": "/api/v1/products/6/",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMCwiZXhwIjoxNTQ4MTM2NjU1fQ.7dw371skHjGsHmut0UvzAKLstfJcibxZXvvpflR3wr0",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMCwiZXhwIjoxNTQ4MTQzMzA3fQ.z08EVpl_4azJWY4LoBn5fw37eKI3LnwJu-yUA25bpVE",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -29,14 +29,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 6,\n  \"title\": \"Aerodynamic Paper Bench\",\n  \"inventory_count\": 65,\n  \"price_cents\": 7992,\n  \"price_currency\": \"USD\"\n}",
+      "response_body": "{\n  \"id\": 6,\n  \"title\": \"Sleek Linen Watch\",\n  \"inventory_count\": 31,\n  \"price_cents\": 7255,\n  \"price_currency\": \"USD\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"f487c3a7cbbf75e9565583fb62fd96bb\"",
+        "ETag": "W/\"3fa7f47c9c8191e2f883e5272f0d53d3\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "1719ab30-5b70-46ca-b0a6-7d987a09d917",
-        "X-Runtime": "0.002368",
-        "Content-Length": "105"
+        "X-Request-Id": "02657a06-20dd-4f6d-a865-801f1dafb284",
+        "X-Runtime": "0.002982",
+        "Content-Length": "99"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

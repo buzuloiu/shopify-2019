@@ -20,7 +20,7 @@
       "request_path": "/api/v1/carts/9/complete",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE1NDgxMzY2NTV9.rDW7Ii08cefJya02R1_vGwGItgZmiANaMjs8F6mV4gs",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE1NDgxNDMzMDd9.hhYmxki3lNPekEZuSa4xMIp6-unBylhawyxUDLG16XE",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -30,13 +30,13 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 9,\n  \"total_cents\": 0,\n  \"total_currency\": \"USD\",\n  \"completed_at\": \"2019-01-21T05:57:35.966Z\",\n  \"line_items\": [\n\n  ]\n}",
+      "response_body": "{\n  \"id\": 9,\n  \"total_cents\": 0,\n  \"total_currency\": \"USD\",\n  \"completed_at\": \"2019-01-21T07:48:27.589Z\",\n  \"line_items\": [\n\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"43e9456b145f45f917f9cbe2fb45e282\"",
+        "ETag": "W/\"28ee799e2bc52e2414fea4390b25fa73\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "bf83650a-4864-470a-b484-1c33d5931f3f",
-        "X-Runtime": "0.004814",
+        "X-Request-Id": "ea8ed575-503f-4364-af90-7bd5d61fc565",
+        "X-Runtime": "0.005952",
         "Content-Length": "105"
       },
       "response_content_type": "application/json; charset=utf-8",
