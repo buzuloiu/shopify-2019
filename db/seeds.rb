@@ -7,15 +7,11 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 User.create(email: 'example@mail.com' , password: '123123123' , password_confirmation: '123123123')
 
-Product.create(title:  'one',  price_cents: 100, price_currency: "USD", inventory_count: 4)
-Product.create(title:  'yeet',  price_cents: 99, price_currency: "USD", inventory_count: 45)
-Product.create(title:  'yote',  price_cents: 45, price_currency: "USD", inventory_count: 54)
-Product.create(title:  'lol',  price_cents: 40, price_currency: "USD", inventory_count: 44)
-Product.create(title:  'hey',  price_cents: 69, price_currency: "USD", inventory_count: 46)
-Product.create(title:  'sorry',  price_cents: 96, price_currency: "USD", inventory_count: 49)
-Product.create(title:  'oops',  price_cents: 96, price_currency: "USD", inventory_count: 0)
+3.times do
+  FactoryBot.create(:product, :in_stock)
+end
+FactoryBot.create(:product, :out_of_stock)
 
-Cart.create()
 
 LineItem.create(cart_id: 1, product_id: 2, unit_price_cents: 99, total_price_currency: "USD", quantity: 1, total_price_cents: 99, unit_price_currency: "USD")
 LineItem.create(cart_id: 1, product_id: 3, unit_price_cents: 45, total_price_currency: "USD",quantity: 2, total_price_cents: 90, unit_price_currency: "USD")
