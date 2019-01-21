@@ -20,7 +20,7 @@
       "request_path": "/api/v1/products?qty_available=1",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo3LCJleHAiOjE1NDgxMDIxMTF9.vwDFUD1UOmos0zym4RQXu5g47p1SX5MI_4ekIIm8meQ",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4LCJleHAiOjE1NDgxMzY2NTV9.63z18XJVJcQcw_76KLIxphmBbKg0UH0SEE15gUi8pR8",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -30,14 +30,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n\n]",
+      "response_body": "[\n  {\n    \"id\": 2,\n    \"title\": \"Awesome Wooden Plate\",\n    \"inventory_count\": 46,\n    \"price_cents\": 2991,\n    \"price_currency\": \"USD\"\n  },\n  {\n    \"id\": 3,\n    \"title\": \"Sleek Cotton Gloves\",\n    \"inventory_count\": 37,\n    \"price_cents\": 2662,\n    \"price_currency\": \"USD\"\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\"",
+        "ETag": "W/\"f70681025f77d12d708bd3361a11deb1\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "2836d6f1-5509-4d55-aeb6-0819d467542d",
-        "X-Runtime": "0.003434",
-        "Content-Length": "2"
+        "X-Request-Id": "427a74ca-911a-498f-92ea-138a605540e5",
+        "X-Runtime": "0.005618",
+        "Content-Length": "206"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

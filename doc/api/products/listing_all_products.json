@@ -1,0 +1,45 @@
+{
+  "resource": "Products",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/api/v1/products",
+  "description": "Listing all products",
+  "explanation": "Retrieve all of the products.",
+  "parameters": [
+    {
+      "name": "qty_available",
+      "description": "minimum quantity available, returns products with stock equal to or higher than the parameter"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/api/v1/products",
+      "request_body": null,
+      "request_headers": {
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE1NDgxMzY2NTV9._PoBBCdvQ3W0g5-8QxxtbHFjNbRtMUl9ZDEsW7Nzvw4",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 4,\n    \"title\": \"Mediocre Leather Coat\",\n    \"inventory_count\": 68,\n    \"price_cents\": 1599,\n    \"price_currency\": \"USD\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"Aerodynamic Iron Chair\",\n    \"inventory_count\": 0,\n    \"price_cents\": 5086,\n    \"price_currency\": \"USD\"\n  }\n]",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"325cf7694b0612f9697819de5c89f2cb\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "dc568ac7-9775-427d-a146-8859849e94a9",
+        "X-Runtime": "0.002289",
+        "Content-Length": "209"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

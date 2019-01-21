@@ -18,7 +18,7 @@
     {
       "request_method": "POST",
       "request_path": "/users",
-      "request_body": "user[name]=Neil+Bayer&user[email]=voncile%40kundevon.org&user[password]=Df2mNs6d1cGvOjUv",
+      "request_body": "user[name]=Shaun+Bode&user[email]=jenniferhayes%40beahanlittel.com&user[password]=EtWg8aO3A",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -29,15 +29,15 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"name\": \"Neil Bayer\",\n  \"email\": \"voncile@kundevon.org\"\n}",
+      "response_body": "{\n  \"name\": \"Shaun Bode\",\n  \"email\": \"jenniferhayes@beahanlittel.com\"\n}",
       "response_headers": {
-        "Location": "http://example.org/api/v1/products/10",
+        "Location": "http://example.org/api/v1/products/13",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"11330277931123b743cd140e7773e8c7\"",
+        "ETag": "W/\"78eb38f7c80c2673d5b99fdd44ee12ac\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "71d40114-d674-482f-8bd8-30890e86b85d",
-        "X-Runtime": "0.006171",
-        "Content-Length": "52"
+        "X-Request-Id": "e0acdda5-9c8b-4fd7-803e-3089d54b1b79",
+        "X-Runtime": "0.005620",
+        "Content-Length": "62"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

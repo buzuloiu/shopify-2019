@@ -3,8 +3,8 @@
   "resource_explanation": null,
   "http_method": "PUT",
   "route": "/api/v1/products/:id/purchase",
-  "description": "purchase a product",
-  "explanation": "purchase the product with the given product id",
+  "description": "purchase an out of stock product",
+  "explanation": "try to purchase an out of stock product",
   "parameters": [
     {
       "name": "id",
@@ -17,10 +17,10 @@
   "requests": [
     {
       "request_method": "PUT",
-      "request_path": "/api/v1/products/7/purchase",
+      "request_path": "/api/v1/products/8/purchase",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMSwiZXhwIjoxNTQ4MTM2NjU2fQ.70VA0zo5WhqHwyDxyD8zsySxf4LKI8QcMfz3KVV_jL8",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMiwiZXhwIjoxNTQ4MTM2NjU2fQ.pLmQ0cxBwMxejYtQEhcbNUN97xKkQUghAef5zLFA9-c",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -28,16 +28,15 @@
       "request_query_parameters": {
       },
       "request_content_type": "application/x-www-form-urlencoded",
-      "response_status": 200,
-      "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 7,\n  \"title\": \"Mediocre Wool Bag\",\n  \"inventory_count\": 35,\n  \"price_cents\": 3048,\n  \"price_currency\": \"USD\"\n}",
+      "response_status": 422,
+      "response_status_text": "Unprocessable Entity",
+      "response_body": "{\n  \"inventory_count\": [\n    \"must be greater than -1\"\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"75145dc04feb88bc779da3f5b3ef7479\"",
-        "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "2344f35e-8b6e-448a-b32e-2bb036492c93",
-        "X-Runtime": "0.004751",
-        "Content-Length": "99"
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "9b7e5407-4267-4d6c-a2e5-8bf80f4a7003",
+        "X-Runtime": "0.003695",
+        "Content-Length": "47"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

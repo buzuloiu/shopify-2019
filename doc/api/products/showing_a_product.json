@@ -17,10 +17,10 @@
   "requests": [
     {
       "request_method": "GET",
-      "request_path": "/api/v1/products/2/",
+      "request_path": "/api/v1/products/6/",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo4LCJleHAiOjE1NDgxMDIxMTF9.kmoUZo9aUjAG00XaywqBhk48uaBuarLcogHsoRx_Bzk",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMCwiZXhwIjoxNTQ4MTM2NjU1fQ.7dw371skHjGsHmut0UvzAKLstfJcibxZXvvpflR3wr0",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -29,14 +29,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 2,\n  \"title\": \"Mediocre Paper Watch\",\n  \"inventory_count\": 52,\n  \"price_cents\": 3664,\n  \"price_currency\": \"USD\"\n}",
+      "response_body": "{\n  \"id\": 6,\n  \"title\": \"Aerodynamic Paper Bench\",\n  \"inventory_count\": 65,\n  \"price_cents\": 7992,\n  \"price_currency\": \"USD\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"1649b63ef8760efabcd90dc8f01bd2f6\"",
+        "ETag": "W/\"f487c3a7cbbf75e9565583fb62fd96bb\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "fa77476c-f323-41be-a4bf-bd4e1c8f95c1",
-        "X-Runtime": "0.003529",
-        "Content-Length": "102"
+        "X-Request-Id": "1719ab30-5b70-46ca-b0a6-7d987a09d917",
+        "X-Runtime": "0.002368",
+        "Content-Length": "105"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

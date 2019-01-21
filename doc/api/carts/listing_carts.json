@@ -17,7 +17,7 @@
       "request_path": "/api/v1/carts",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE1NDgxMDIxMTF9.Sa89_zUCBR8EppsZkzdw-pUsU8dELOHRjJS_gT3Mo3E",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE1NDgxMzY2NTV9.5e40ODQpnIPCPv-YWV6LDCtFyH38bATlQ3w1jW1dRL0",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -26,14 +26,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n\n]",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"total_cents\": 0,\n    \"total_currency\": \"USD\",\n    \"completed_at\": null,\n    \"line_items\": [\n\n    ]\n  },\n  {\n    \"id\": 2,\n    \"total_cents\": 0,\n    \"total_currency\": \"USD\",\n    \"completed_at\": null,\n    \"line_items\": [\n\n    ]\n  },\n  {\n    \"id\": 3,\n    \"total_cents\": 0,\n    \"total_currency\": \"USD\",\n    \"completed_at\": null,\n    \"line_items\": [\n\n    ]\n  },\n  {\n    \"id\": 4,\n    \"total_cents\": 0,\n    \"total_currency\": \"USD\",\n    \"completed_at\": null,\n    \"line_items\": [\n\n    ]\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"4f53cda18c2baa0c0354bb5f9a3ecbe5\"",
+        "ETag": "W/\"f8825b0f2bf787c341435a15a81b8a88\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "a6c9fac6-806e-44f8-be50-dbf2cda2fc2e",
-        "X-Runtime": "0.011799",
-        "Content-Length": "2"
+        "X-Request-Id": "9c6ddf83-f2ab-496b-b8b8-9bc453e084c1",
+        "X-Runtime": "0.022960",
+        "Content-Length": "337"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

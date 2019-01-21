@@ -6,12 +6,10 @@ class LineItem < ApplicationRecord
 
 
   validates :quantity, presence: true, numericality: { only_integer: true, greater_than: 0 }
-  #validate :product_present
   #validate :cart_present
 
   def is_available?
     @product = self.product
-    puts @product.inventory_count >= self.quantity
     return @product.inventory_count >= self.quantity
   end
 
@@ -19,10 +17,11 @@ class LineItem < ApplicationRecord
     if self.is_available?
       @product = self.product
       self.quantity.times do
-        @product.purchase.save!
+        @product.purchase
       end
     end
   end
+
 
   private
   def update_total_price

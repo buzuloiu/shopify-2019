@@ -18,6 +18,13 @@
       "explanation": null,
       "examples": [
         {
+          "description": "Adding an item that does not exitst to a cart",
+          "link": "carts/adding_an_item_that_does_not_exitst_to_a_cart.json",
+          "groups": "all",
+          "route": "/api/v1/carts/:id/add",
+          "method": "put"
+        },
+        {
           "description": "Adding an item to a cart",
           "link": "carts/adding_an_item_to_a_cart.json",
           "groups": "all",
@@ -59,6 +66,13 @@
       "explanation": null,
       "examples": [
         {
+          "description": "Listing all products",
+          "link": "products/listing_all_products.json",
+          "groups": "all",
+          "route": "/api/v1/products",
+          "method": "get"
+        },
+        {
           "description": "Listing products that are in stock",
           "link": "products/listing_products_that_are_in_stock.json",
           "groups": "all",
@@ -75,6 +89,13 @@
         {
           "description": "purchase a product",
           "link": "products/purchase_a_product.json",
+          "groups": "all",
+          "route": "/api/v1/products/:id/purchase",
+          "method": "put"
+        },
+        {
+          "description": "purchase an out of stock product",
+          "link": "products/purchase_an_out_of_stock_product.json",
           "groups": "all",
           "route": "/api/v1/products/:id/purchase",
           "method": "put"

@@ -17,7 +17,7 @@
       "request_path": "/api/v1/carts/",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE1NDgxMDIxMTF9.uQfaKJWzPBccyQwamT-cj9kNj1hmTnMYIiocaWog4oE",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0LCJleHAiOjE1NDgxMzY2NTV9.hC9FEz9elhwUxCKSA3DDby3W6BGz2Qca9Kcp2Kx1dr4",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -27,14 +27,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 201,
       "response_status_text": "Created",
-      "response_body": "{\n  \"id\": 2,\n  \"total_cents\": 0,\n  \"total_currency\": \"USD\",\n  \"completed_at\": null,\n  \"line_items\": [\n\n  ]\n}",
+      "response_body": "{\n  \"id\": 6,\n  \"total_cents\": 0,\n  \"total_currency\": \"USD\",\n  \"completed_at\": null,\n  \"line_items\": [\n\n  ]\n}",
       "response_headers": {
-        "Location": "http://example.org/api/v1/products/2",
+        "Location": "http://example.org/api/v1/products/6",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"757acef7622db53cb07e6f703c15183b\"",
+        "ETag": "W/\"38b9498df535ab2d40fc070bfb4e6aca\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "ddfc24b1-5274-4962-aeb5-747d7f3a874d",
-        "X-Runtime": "0.003897",
+        "X-Request-Id": "5b042d20-6d06-4836-9c7e-1c2a2047c5ec",
+        "X-Runtime": "0.003292",
         "Content-Length": "83"
       },
       "response_content_type": "application/json; charset=utf-8",

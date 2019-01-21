@@ -1,0 +1,53 @@
+{
+  "resource": "Carts",
+  "resource_explanation": null,
+  "http_method": "PUT",
+  "route": "/api/v1/carts/:id/add",
+  "description": "Adding an item that does not exitst to a cart",
+  "explanation": "fails to add an item .",
+  "parameters": [
+    {
+      "name": "id",
+      "description": "id of the cart to add the product to"
+    },
+    {
+      "name": "product_id",
+      "description": "id of the product to be added"
+    },
+    {
+      "name": "quantity",
+      "description": "quantity of the product to add to cart"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "PUT",
+      "request_path": "/api/v1/carts/8/add",
+      "request_body": "product_id=99999&quantity=45",
+      "request_headers": {
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo2LCJleHAiOjE1NDgxMzY2NTV9.QWAB7idZU4Bn0dcWX_pyb82CFtTscodYWA_Q_9Zqayk",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 422,
+      "response_status_text": "Unprocessable Entity",
+      "response_body": "{\n  \"Product\": [\n    \"there is no product with this id\"\n  ]\n}",
+      "response_headers": {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "no-cache",
+        "X-Request-Id": "c13c9cde-b522-40b9-95c0-3fc09dfc9b79",
+        "X-Runtime": "0.006063",
+        "Content-Length": "48"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
