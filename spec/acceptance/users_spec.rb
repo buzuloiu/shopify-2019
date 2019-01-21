@@ -10,8 +10,6 @@ resource "Users" do
 
       let(:user) { {name:Faker::Name.name.to_s, email: Faker::Internet.email.to_s, password:Faker::Internet.password} }
 
-      let(:email) { Faker::Internet.email }
-      let(:password) { Faker::Password.password}
 
       example "Creating a new user" do
         explanation "Create a new user"

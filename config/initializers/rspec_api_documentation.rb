@@ -8,6 +8,7 @@ RspecApiDocumentation.configure do |config|
   #   :json_iodocs, :textile, :markdown, :append_json
   config.format = [:json]
 
+
   # Change the name of the API on index pages
   config.api_name = "API Documentation"
 

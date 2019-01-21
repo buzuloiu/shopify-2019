@@ -28,7 +28,7 @@
       "request_path": "/api/v1/carts/7/add",
       "request_body": "product_id=1&quantity=31",
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NDgxNDMzMDd9.HVZMK6eAj6DFml_n1tFpR4fX3nrPgnRPS6of6qT5SDc",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE1NDgxNDU1Njh9.uODqnUWtCaWNMztlYjOsfpXcdDcJ53NqStWOomk33Pw",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -38,14 +38,14 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 7,\n  \"total_cents\": 221340,\n  \"total_currency\": \"USD\",\n  \"completed_at\": null,\n  \"line_items\": [\n    {\n      \"product_id\": 1,\n      \"quantity\": 31,\n      \"unit_price_cents\": 7140,\n      \"unit_price_currency\": \"USD\",\n      \"total_price_cents\": 221340,\n      \"total_price_currency\": \"USD\"\n    }\n  ]\n}",
+      "response_body": "{\n  \"id\": 7,\n  \"total_cents\": 88009,\n  \"total_currency\": \"USD\",\n  \"completed_at\": null,\n  \"line_items\": [\n    {\n      \"product_id\": 1,\n      \"quantity\": 31,\n      \"unit_price_cents\": 2839,\n      \"unit_price_currency\": \"USD\",\n      \"total_price_cents\": 88009,\n      \"total_price_currency\": \"USD\"\n    }\n  ]\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"5eff9175a8b6842e8714fa3ef8bf90ea\"",
+        "ETag": "W/\"53f826859d943e7c18a56e0214dede14\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "3c69e6f9-e404-469f-889c-1e0568a2333c",
-        "X-Runtime": "0.023679",
-        "Content-Length": "226"
+        "X-Request-Id": "613ba730-ec02-487c-a22c-5f03dd871a80",
+        "X-Runtime": "0.022451",
+        "Content-Length": "224"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

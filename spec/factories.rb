@@ -2,7 +2,7 @@ require 'faker'
 
 FactoryBot.define do
   factory :user do
-    name { "MyString" }
+    name { Faker::Name.name }
     email { Faker::Internet.email }
     password_digest { User.digest('password') }
   end

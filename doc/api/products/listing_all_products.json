@@ -20,7 +20,7 @@
       "request_path": "/api/v1/products",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE1NDgxNDMzMDd9.OlptoagAOn9lZ0JB2zDLjMSRegzxrp5EohheQu_srxM",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo5LCJleHAiOjE1NDgxNDU1Njh9.NuFLOXHclm6Oil7ZpA8F_1b14GFCEemT7tYdUq7S1FA",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -29,14 +29,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "[\n  {\n    \"id\": 4,\n    \"title\": \"Rustic Bronze Watch\",\n    \"inventory_count\": 89,\n    \"price_cents\": 7164,\n    \"price_currency\": \"USD\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"Ergonomic Aluminum Coat\",\n    \"inventory_count\": 0,\n    \"price_cents\": 3398,\n    \"price_currency\": \"USD\"\n  }\n]",
+      "response_body": "[\n  {\n    \"id\": 4,\n    \"title\": \"Ergonomic Bronze Gloves\",\n    \"inventory_count\": 58,\n    \"price_cents\": 2352,\n    \"price_currency\": \"USD\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"Rustic Iron Bottle\",\n    \"inventory_count\": 0,\n    \"price_cents\": 5512,\n    \"price_currency\": \"USD\"\n  }\n]",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"cc76f082a1a17538582fe0ad324500a5\"",
+        "ETag": "W/\"fb5763bf8a9529d21d528e6208c029da\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "6f785ab2-18ad-45da-94d3-6b81b9d0b19d",
-        "X-Runtime": "0.002709",
-        "Content-Length": "208"
+        "X-Request-Id": "c1f7d7fe-622c-450a-8185-6083c2187f0d",
+        "X-Runtime": "0.002876",
+        "Content-Length": "207"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

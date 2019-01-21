@@ -20,7 +20,7 @@
       "request_path": "/api/v1/products/6/",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMCwiZXhwIjoxNTQ4MTQzMzA3fQ.z08EVpl_4azJWY4LoBn5fw37eKI3LnwJu-yUA25bpVE",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMCwiZXhwIjoxNTQ4MTQ1NTY4fQ.-CeMAVuTuQC8cpxsp06CSMrq9sN_WreE-bitrqmfM-0",
         "Host": "example.org",
         "Cookie": ""
       },
@@ -29,14 +29,14 @@
       "request_content_type": null,
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 6,\n  \"title\": \"Sleek Linen Watch\",\n  \"inventory_count\": 31,\n  \"price_cents\": 7255,\n  \"price_currency\": \"USD\"\n}",
+      "response_body": "{\n  \"id\": 6,\n  \"title\": \"Mediocre Copper Gloves\",\n  \"inventory_count\": 94,\n  \"price_cents\": 2252,\n  \"price_currency\": \"USD\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"3fa7f47c9c8191e2f883e5272f0d53d3\"",
+        "ETag": "W/\"b3594663893e81fd6f4fc7d21920a71e\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "02657a06-20dd-4f6d-a865-801f1dafb284",
-        "X-Runtime": "0.002982",
-        "Content-Length": "99"
+        "X-Request-Id": "09f3c8a1-4803-4749-a60a-bcf42662df88",
+        "X-Runtime": "0.003178",
+        "Content-Length": "104"
       },
       "response_content_type": "application/json; charset=utf-8",
       "curl": null

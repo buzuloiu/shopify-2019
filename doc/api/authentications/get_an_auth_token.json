@@ -22,7 +22,7 @@
     {
       "request_method": "POST",
       "request_path": "/authenticate",
-      "request_body": "email=billybayer%40heaney.name&password=password",
+      "request_body": "email=lance%40kertzmann.biz&password=password",
       "request_headers": {
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
@@ -33,13 +33,13 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"auth_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NDgxNDMzMDd9.faScMqoZgmQFwUlHPVS-pTajYKTOXm_P4P9tXZIMlBc\"\n}",
+      "response_body": "{\n  \"auth_token\": \"eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE1NDgxNDU1Njh9.i5INkElS8JlC7WIbnWCtPNwT8kRe-afA77FQCZQdwHw\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"900c77905349bff58c19b9f2a5301c7a\"",
+        "ETag": "W/\"76e5a4c4b4cb9909c9f6adedcffeba21\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "64e0b04c-7576-4504-a61d-7f9bd9d69749",
-        "X-Runtime": "0.020601",
+        "X-Request-Id": "f0c53831-e443-4356-954f-1b18213575b3",
+        "X-Runtime": "0.019173",
         "Content-Length": "122"
       },
       "response_content_type": "application/json; charset=utf-8",

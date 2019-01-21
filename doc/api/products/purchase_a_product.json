@@ -20,7 +20,7 @@
       "request_path": "/api/v1/products/7/purchase",
       "request_body": null,
       "request_headers": {
-        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMSwiZXhwIjoxNTQ4MTQzMzA3fQ.Nx9tRR-OIdizJAW_O6aMb3VDTATKTOROLS1viUzsguc",
+        "Authorization": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxMSwiZXhwIjoxNTQ4MTQ1NTY4fQ.PbbUg-HWxvar_A9F-VKiNRy2ZSpF47j0uUrEdrh5dk0",
         "Host": "example.org",
         "Content-Type": "application/x-www-form-urlencoded",
         "Cookie": ""
@@ -30,13 +30,13 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"id\": 7,\n  \"title\": \"Durable Aluminum Clock\",\n  \"inventory_count\": 98,\n  \"price_cents\": 4964,\n  \"price_currency\": \"USD\"\n}",
+      "response_body": "{\n  \"id\": 7,\n  \"title\": \"Gorgeous Cotton Bottle\",\n  \"inventory_count\": 59,\n  \"price_cents\": 7679,\n  \"price_currency\": \"USD\"\n}",
       "response_headers": {
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"f8e4f499a862dd01593af9f745c72408\"",
+        "ETag": "W/\"1239c90f0cf5ebe432377cb6e6c249da\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "61ef9ff6-424b-4fdd-9b10-43aae8dedc99",
-        "X-Runtime": "0.005137",
+        "X-Request-Id": "88ba14d5-313a-4b87-ba2d-1ced18047748",
+        "X-Runtime": "0.004180",
         "Content-Length": "104"
       },
       "response_content_type": "application/json; charset=utf-8",
