@@ -97,7 +97,7 @@ request:
 curl -H "Authorization: eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE1NDgxMzczOTF9.FZ4XDEA9XrldO4KHQY19s-D4S-AWcoH_s9JhnW0iFPA" http://shopify-intern-api.herokuapp.com/api/v1/products
 ```
 
-response
+response:
 
 - Querying for all products should support passing an argument to only return products with available inventory.
 

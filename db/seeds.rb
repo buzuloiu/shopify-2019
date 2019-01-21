@@ -13,5 +13,5 @@ end
 FactoryBot.create(:product, :out_of_stock)
 
 
-LineItem.create(cart_id: 1, product_id: 2, unit_price_cents: 99, total_price_currency: "USD", quantity: 1, total_price_cents: 99, unit_price_currency: "USD")
-LineItem.create(cart_id: 1, product_id: 3, unit_price_cents: 45, total_price_currency: "USD",quantity: 2, total_price_cents: 90, unit_price_currency: "USD")
+LineItem.create(cart_id: 1, product_id: 2, unit_price_cents: 0, total_price_currency: "USD", quantity: 1, total_price_cents: 0, unit_price_currency: "USD")
+LineItem.create(cart_id: 1, product_id: 3, unit_price_cents: 0, total_price_currency: "USD",quantity: 2, total_price_cents: 0, unit_price_currency: "USD")
