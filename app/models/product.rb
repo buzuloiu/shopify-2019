@@ -7,7 +7,9 @@ class Product < ApplicationRecord
   def purchase
     if self.inventory_count >= 1
       self.inventory_count -= 1
+      self.save
+    else
+      self.errors.add(:product, 'not in stock')
     end
-    return self
   end
 end

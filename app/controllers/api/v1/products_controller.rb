@@ -42,9 +42,9 @@ class Api::V1::ProductsController < ApplicationController
 
   # PUT /products/1/purchase
   def purchase
-    @product = Product.find(params[:id]).purchase
+    @product = Product.find(params[:id])
 
-    if @product.save
+    if @product.purchase
       render json: @product
     else
       render json: @product.errors, status: :unprocessable_entity
