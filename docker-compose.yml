@@ -1,0 +1,17 @@
+version: '3'
+services:
+  db:
+    image: postgres:9.6
+    ports:
+          - "5432"
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+  web:
+    build: .
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
+    volumes:
+      - .:/shopify-2019
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
