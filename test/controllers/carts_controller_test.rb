@@ -2,38 +2,39 @@ require 'test_helper'
 
 class CartsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @cart = carts(:one)
+    @cart = FactoryBot.create(:cart)
+    @user = FactoryBot.create(:user)
+    @api_key = JsonWebToken.encode(user_id: @user.id)
   end
 
-  test "should get index" do
-    get carts_url, as: :json
+  test "should list carts" do
+    get api_v1_carts_url,
+      params: { authentication: @api_key },
+    as: :json
     assert_response :success
   end
 
   test "should create cart" do
     assert_difference('Cart.count') do
-      post carts_url, params: { cart: { completed_at: @cart.completed_at, total: @cart.total } }, as: :json
+      put api_v1_carts_url,
+       params: { cart: { completed_at: @cart.completed_at, total_cents: @cart.total_cents },
+       authentication: @api_key },
+      as: :json
     end
 
     assert_response 201
   end
 
   test "should show cart" do
-    get cart_url(@cart), as: :json
+    get api_v1_cart_url(@cart),
+      params: { authentication: @api_key },
+    as: :json
     assert_response :success
   end
 
   test "should update cart" do
-    patch cart_url(@cart), params: { cart: { completed_at: @cart.completed_at, total: @cart.total } }, as: :json
+    post api_v1_cart_url(@cart), params: { cart: { completed_at: @cart.completed_at, total_cents: @cart.total_cents } }, as: :json
     assert_response 200
-  end
-
-  test "should destroy cart" do
-    assert_difference('Cart.count', -1) do
-      delete cart_url(@cart), as: :json
-    end
-
-    assert_response 204
   end
 
   test "should not complete completed cart" do
