@@ -7,7 +7,7 @@ services:
 
 script:
     - RAILS_ENV=test bundle exec rake db:schema:load --trace
-    - bundle exec rake test
+    - rake docs:generate
 
 before_script:
     - cp config/database.yml.travis config/database.yml
