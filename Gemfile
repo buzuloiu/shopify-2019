@@ -38,6 +38,8 @@ gem 'jwt'
 gem 'simple_command'
 gem 'rack-defense'
 gem 'figaro'
+gem 'graphql'
+
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
@@ -51,6 +53,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'figaro'
   gem 'pry'
+  gem 'graphiql-rails'
 end
 
 group :development do
