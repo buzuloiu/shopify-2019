@@ -3,11 +3,8 @@ require 'test_helper'
 class LineItemsControllerTest < ActionDispatch::IntegrationTest
   setup do
     @line_item = line_items(:one)
-  end
-
-  test "should get index" do
-    get api_v1_line_items_url, as: :json
-    assert_response :success
+    @user = FactoryBot.create(:user)
+    @api_key = JsonWebToken.encode(user_id: @user.id)
   end
 
   test "should create line_item" do
@@ -19,18 +16,28 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should show line_item" do
-    get api_v1_line_item_url(@line_item), as: :json
+    get api_v1_line_item_url(@line_item),
+      params: { authentication: @api_key },
+    as: :json
     assert_response :success
   end
 
   test "should update line_item" do
-    patch api_v1_line_item_url(@line_item), params: { line_item: { cart_id: @line_item.cart_id, product_id: @line_item.product_id, quantity: @line_item.quantity, total_price: @line_item.total_price_cents } }, as: :json
+    patch api_v1_line_item_url(@line_item),
+      params: { line_item: { cart_id: @line_item.cart_id,
+                             product_id: @line_item.product_id,
+                             quantity: @line_item.quantity,
+                             total_price: @line_item.total_price_cents },
+                authentication: @api_key},
+      as: :json
     assert_response 200
   end
 
   test "should destroy line_item" do
     assert_difference('LineItem.count', -1) do
-      delete api_v1_line_item_url(@line_item), as: :json
+      delete api_v1_line_item_url(@line_item),
+        params: { authentication: @api_key },
+      as: :json
     end
 
     assert_response 204

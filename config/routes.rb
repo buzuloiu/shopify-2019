@@ -15,7 +15,8 @@ Rails.application.routes.draw do
       put '/carts/:id/add', to: 'carts#add_to_cart'
       get '/line_items/:id/available', to: 'line_items#available'
       put '/line_items/:id/purchase', to: 'line_items#purchase'
-      resources :products, only: [:index, :show, :purchase]
+      resources :products, only: [:index, :purchase]
+      get '/products/:id', to: 'products#show'
       resources :carts, only: [:create, :show, :index]
       resources :line_items
     end

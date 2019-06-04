@@ -2,35 +2,32 @@ require 'test_helper'
 
 class ProductsControllerTest < ActionDispatch::IntegrationTest
   setup do
-    @product = products(:one)
+    @product = FactoryBot.create(:product, :in_stock)
+    @product_no_stock = FactoryBot.create(:product, :out_of_stock)
+    @user = FactoryBot.create(:user)
+    @api_key = JsonWebToken.encode(user_id: @user.id)
   end
 
   test "should get index" do
-    get api_v1_products_url, as: :json
+    get api_v1_products_url,
+      params: { authentication: @api_key },
+    as: :json
     assert_response :success
-  end
-
-  test "should create product" do
-    assert_difference('Product.count') do
-      post api_v1_products_url, params: { product: { inventory_count: @product.inventory_count, price: @product.price_cents, title: @product.title } }, as: :json
-    end
-
-    assert_response 201
   end
 
   test "should show product" do
-    get api_v1_product_url(@product), as: :json
+    get api_v1_product_url(@product.id),
+      params: { authentication: @api_key },
+    as: :json
     assert_response :success
   end
 
-  test "should update product" do
-    put api_v1_product_url(@product), params: { product: { inventory_count: @product.inventory_count, price: @product.price_cents, title: @product.title } }, as: :json
-    assert_response 200
-  end
-
-
   test "should purchase product" do
-    put api_v1_product_purchase_url(@product), params: { product: { inventory_count: @product.inventory_count, price: @product.price_cents, title: @product.title } }, as: :json
+    put api_v1_url(@product),
+     params: { product: { inventory_count: @product.inventory_count,
+                          price: @product.price_cents,
+                          title: @product.title } },
+    as: :json
     assert_response 200
   end
 
