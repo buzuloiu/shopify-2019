@@ -2,10 +2,12 @@
 
 one:
   title: MyString
-  price: 1
-  inventory_count: 1
+  price_cents: 239
+  inventory_count: 4
+  price_currency: USD
 
 two:
-  title: MyString
-  price: 1
-  inventory_count: 1
+  title: MyString2
+  price_cents: 23
+  inventory_count: 3
+  price_currency: USD

@@ -1,5 +1,8 @@
 # Shopify Summer 2019 Application
 
+![CI Status](https://travis-ci.org/buzuloiu/shopify-2019.svg?branch=master)
+[![codecov](https://codecov.io/gh/buzuloiu/shopify-2019/branch/master/graph/badge.svg)](https://codecov.io/gh/buzuloiu/shopify-2019)
+
 Welcome to my basic online store!
 
 ## Overview

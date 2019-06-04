@@ -53,7 +53,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'figaro'
   gem 'pry'
-  gem 'graphiql-rails'
+  gem 'graphiql-rails' 
 end
 
 group :development do

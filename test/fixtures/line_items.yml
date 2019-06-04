@@ -4,10 +4,10 @@ one:
   product: one
   cart: one
   quantity: 1
-  total_price: 1
+  total_price_cents: 1
 
 two:
   product: two
   cart: two
   quantity: 1
-  total_price: 1
+  total_price_cents: 1
