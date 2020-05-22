@@ -120,7 +120,7 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    puma (3.12.0)
+    puma (3.12.6)
     rack (2.0.6)
     rack-defense (0.2.6)
       rack (>= 1.6.11)
@@ -237,7 +237,7 @@ DEPENDENCIES
   money-rails (~> 1.12)
   pg (>= 0.18, < 2.0)
   pry
-  puma (~> 3.11)
+  puma (~> 3.12)
   rack-defense
   raddocs
   rails (~> 5.2.2)
